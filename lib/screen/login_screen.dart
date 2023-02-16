@@ -25,25 +25,28 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 50,
               ),
               Text("Bem vindo de volta",
-                  style: GoogleFonts.outfit(
+                  style: GoogleFonts.outfit(fontSize: 14.0,
                       color: Color.fromARGB(255, 131, 131, 131))),
               Text("Login para sua conta",
                   style: GoogleFonts.outfit(
-                      fontSize: 20.0, fontWeight: FontWeight.bold)),
-             const SizedBox(height: 20.0),
+                      fontSize: 22.0, fontWeight: FontWeight.bold)),
+              const SizedBox(height: 20.0),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: const InputDecoration(
-                  contentPadding: EdgeInsets.symmetric(horizontal: 18.0),
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 16),
                     hintText: 'email',
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(6)))),
               ),
-              const SizedBox(height: 20.0),
+              const SizedBox(height: 10.0),
               TextFormField(
                 keyboardType: TextInputType.visiblePassword,
                 decoration: const InputDecoration(
                     hintText: 'senha',
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 20.0, vertical: 16),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(6)))),
               )
